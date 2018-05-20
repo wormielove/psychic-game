@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html class="no-js"> 
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <!<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">--> -->
+</head>
+<body>  
+
+        <h1>The Psychic Game</h1>
+        <p id="userGuess">What letter am I thinking of: <input type="text"></p>
+        <p id="wins">Wins: </p>
+        <p id="losses">Losses: </p> 
+        <p>Your guesses so far: <span>0</span></p> 
+
+<script type="text/javascript">
+
+    // // // Create a variable for the user-keystroke
+    var userGuess = event.key;
+
+    //Create a variable for the random character
+    var randomCharacter = rchar;  
+
+    //Create a function that kicks off the random character generation
+    document.onkeyup = function(rchar) {
+
+    //Write a function to randomly choose a character
+    var chars = "abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQURSTUVWXYZ";
+    return chars.substr( Math.floor(Math.random() * 62), 1);
+    }
+      
+    //Log the random character
+    console.log(rchar);
+
+    //Need code to compare keystroke and random number and if equal count win, if different count lose
+    if (rchar == userGuess) {
+        console.log(win);
+    }   
+    else  {
+       console.log(lose);
+    }
+
+    //Need code to log the win and the loss
+
+    //Need code to delete old keystroke when new one is entered
+
+    //Need code to count down number of guesses from nine
+
+</script>
+
+
+</body>
+</html>
